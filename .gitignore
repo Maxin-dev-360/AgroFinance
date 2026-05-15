@@ -10,6 +10,8 @@ node_modules/
 /.next/
 /out/
 
+# docs/ is intentionally NOT ignored — it's the GitHub Pages static export
+
 # Production
 /build
 
