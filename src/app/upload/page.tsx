@@ -104,7 +104,7 @@ export default function UploadPage() {
         <div className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full bg-gradient-radial from-[rgba(14,165,233,0.05)] to-transparent blur-3xl" />
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

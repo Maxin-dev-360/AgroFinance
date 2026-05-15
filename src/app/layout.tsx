@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -13,8 +13,12 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_PE',
   },
+}
+
+export const viewport: Viewport = {
   themeColor: '#020D09',
-  viewport: 'width=device-width, initial-scale=1',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({

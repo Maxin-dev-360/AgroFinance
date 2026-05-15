@@ -119,7 +119,7 @@ export default function CopilotPage() {
         <div className="absolute inset-0 bg-grid opacity-20" />
       </div>
 
-      <div className="flex-1 flex max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-20">
+      <div className="flex-1 flex max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 pt-4">
         <div className="flex w-full gap-6 py-6">
 
           {/* Left sidebar — Context */}

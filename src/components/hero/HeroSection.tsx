@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { motion, useMotionValue, useSpring } from 'framer-motion'
+import { motion, useMotionValue, useSpring, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { ArrowRight, Sparkles, TrendingDown, Leaf, Globe2 } from 'lucide-react'
 import CapybaraBot from '@/components/mascot/CapybaraBot'
@@ -138,7 +138,7 @@ export default function HeroSection() {
       <div className="absolute bottom-20 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-radial from-[rgba(14,165,233,0.08)] to-transparent blur-3xl z-0 animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24">
         <div className="flex flex-col items-center text-center">
 
           {/* Badge */}
@@ -158,30 +158,36 @@ export default function HeroSection() {
           </motion.div>
 
           {/* Main Headline - Animated rotating */}
-          <div className="mb-6 h-[120px] sm:h-[100px] lg:h-[80px] flex items-center overflow-hidden">
-            <motion.h1
-              key={headlineIndex}
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -40 }}
-              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="text-[2.8rem] sm:text-[3.8rem] lg:text-[5rem] font-black tracking-tight leading-none max-w-4xl"
-            >
-              <span className="text-[#F0FDF4]">
-                {headlines[headlineIndex].split(' con IA.')[0]}
-                {headlines[headlineIndex].includes(' con IA.') && (
+          <div className="relative w-full max-w-5xl mb-10" style={{ height: '200px' }}>
+            <AnimatePresence mode="wait">
+              <motion.h1
+                key={headlineIndex}
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -16 }}
+                transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                className="absolute inset-0 flex flex-col items-center justify-center text-center text-[2.2rem] sm:text-[3rem] lg:text-[3.8rem] font-black tracking-tight leading-[1.15] px-4"
+              >
+                {headlineIndex === 0 && (
                   <>
-                    <span className="gradient-text glow-text"> con IA.</span>
+                    <span className="text-[#F0FDF4]">Automatiza tu huella de carbono</span>
+                    <span className="gradient-text glow-text">con Inteligencia Artificial.</span>
                   </>
                 )}
-                {!headlines[headlineIndex].includes(' con IA.') && (
-                  <span className="gradient-text glow-text">
-                    {headlines[headlineIndex].includes('Climate') ? ' Intelligence' : ''}
-                    {headlines[headlineIndex].includes('minutos') ? '' : ''}
-                  </span>
+                {headlineIndex === 1 && (
+                  <>
+                    <span className="text-[#F0FDF4]">Climate <span className="gradient-text glow-text">Intelligence</span></span>
+                    <span className="text-[#F0FDF4]">para agroexportadoras.</span>
+                  </>
                 )}
-              </span>
-            </motion.h1>
+                {headlineIndex === 2 && (
+                  <>
+                    <span className="text-[#F0FDF4]">Cumplimiento <span className="gradient-text glow-text">ESG</span></span>
+                    <span className="text-[#F0FDF4]">en minutos, no en meses.</span>
+                  </>
+                )}
+              </motion.h1>
+            </AnimatePresence>
           </div>
 
           {/* Subheadline */}
