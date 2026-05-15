@@ -135,7 +135,7 @@ export default function StatsSection() {
             <p className="text-[rgba(167,243,208,0.6)] mb-6 text-sm leading-relaxed">
               Kapi analiza tus emisiones, detecta riesgos climáticos y genera reportes ESG automáticamente. Disponible 24/7, en español, con contexto de tu empresa.
             </p>
-            <a href="/copilot" className="btn-primary inline-flex items-center gap-2 text-sm">
+            <a href="/copilot/" className="btn-primary inline-flex items-center gap-2 text-sm">
               <MessageSquare className="w-4 h-4" />
               Conversar con Kapi
             </a>

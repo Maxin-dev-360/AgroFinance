@@ -208,12 +208,12 @@ export default function HeroSection() {
             transition={{ duration: 0.7, delay: 0.35 }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-20"
           >
-            <Link href="/dashboard" className="btn-primary text-sm px-8 py-4 rounded-2xl flex items-center gap-2">
+            <Link href="/dashboard/" className="btn-primary text-sm px-8 py-4 rounded-2xl flex items-center gap-2">
               <Leaf className="w-4 h-4" />
               Comenzar análisis gratuito
               <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="/copilot" className="btn-secondary text-sm px-8 py-4 rounded-2xl flex items-center gap-2">
+            <Link href="/copilot/" className="btn-secondary text-sm px-8 py-4 rounded-2xl flex items-center gap-2">
               <Sparkles className="w-4 h-4" />
               Ver AI Copilot en vivo
             </Link>

@@ -400,7 +400,7 @@ export default function UploadPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="/dashboard" className="btn-primary text-sm flex items-center justify-center gap-2 py-3">
+                  <a href="/dashboard/" className="btn-primary text-sm flex items-center justify-center gap-2 py-3">
                     <FileSpreadsheet className="w-4 h-4" />
                     Ver Dashboard completo
                   </a>

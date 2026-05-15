@@ -324,7 +324,7 @@ export default function DashboardPage() {
                   ))}
                 </div>
 
-                <a href="/copilot" className="mt-4 btn-secondary text-xs py-2.5 text-center rounded-xl flex items-center justify-center gap-2">
+                <a href="/copilot/" className="mt-4 btn-secondary text-xs py-2.5 text-center rounded-xl flex items-center justify-center gap-2">
                   <Sparkles className="w-3.5 h-3.5" />
                   Abrir AI Copilot completo
                 </a>
@@ -441,7 +441,7 @@ export default function DashboardPage() {
         >
           <div className="flex items-center justify-between mb-5">
             <h3 className="font-bold text-[#F0FDF4] text-base">Reportes Recientes</h3>
-            <a href="/upload" className="text-xs text-[#34D399] font-semibold flex items-center gap-1 hover:gap-2 transition-all">
+            <a href="/upload/" className="text-xs text-[#34D399] font-semibold flex items-center gap-1 hover:gap-2 transition-all">
               Ver todos <ChevronRight className="w-3.5 h-3.5" />
             </a>
           </div>

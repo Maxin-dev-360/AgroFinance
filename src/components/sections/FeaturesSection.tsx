@@ -171,7 +171,7 @@ export default function FeaturesSection() {
           className="flex justify-center"
         >
           <a
-            href="/dashboard"
+            href="/dashboard/"
             className="btn-primary flex items-center gap-2 text-sm"
           >
             <Shield className="w-4 h-4" />
